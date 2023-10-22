@@ -1,0 +1,451 @@
+body {
+    background-image: url('the\ kashi\ yatra\ background.jpg'); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover; /* Cover the entire page with the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Add any other global styles you want */
+    
+}
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 1px 1px 4px white;
+    color: black;
+    
+}
+.navbar-nav .nav-link {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    font-family:'Philosopher', sans-serif;
+    font-size: large;
+    
+    
+}
+.navbar .navbar-nav .nav-link {
+    color: black !important;
+}
+
+/* Target the active link separately, if needed */
+.navbar .navbar-nav .nav-link.active {
+    color: black !important;
+}
+.navbar-toggler{
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px rgb(224, 220, 220);
+}
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* You can adjust the height as needed */
+    background-color: transparent; /* Set the desired underline color */
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.navbar-nav .nav-link:hover::before {
+    background-color: black; /* Set the desired hover underline color */
+}
+.custom-navbar {
+    /* Set the background color to transparent */
+    border: none; /* Remove the border */
+    padding:5px; /* Remove padding */
+    margin: 0;
+  }
+
+  .header-section {
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Create a relative positioning context */
+  }
+
+
+
+
+
+/* Link hover effect */
+.navbar-nav .nav-link:hover {
+    text-shadow: 4px 4px 4px rgb(155, 155, 153);
+}
+.btn
+{
+    font-family:'Philosopher', sans-serif;
+}
+.image-container {
+    /* Add your custom styles here */
+    margin-left: 0px;
+    margin-top: 50px;
+    
+}
+.image-container img
+{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    
+    
+}
+
+/* Custom styles for the details container */
+.details-container h2 {
+    /* Add your custom styles here */
+    margin-top: 50px;
+    font-family:'Courgette', cursive ; 
+}
+.details-container p{
+    font-family:'Philosopher', sans-serif;
+    font-size: 22px;
+    margin-top: 15px;
+}
+/* Custom styles for the heading */
+
+.plan_your_trip
+{
+    font-family:'Courgette', cursive ;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: black;
+}
+.text-content
+{
+    font-family:'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Gap between cards */
+    padding: 20px; /* Padding for the grid container */
+}
+
+/* Style for each place card */
+.place-card {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style for the place image */
+.place-image {
+    overflow: hidden;
+}
+
+.place-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the place details */
+.place-details {
+    padding: 20px;
+}
+
+.place-details h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+.place-details p,li {
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 0;
+    font-family:'Philosopher', sans-serif;
+}
+
+.hotel-card {
+    display: flex;
+    background-color: transparent;
+    margin: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto; /* Remove fixed height to accommodate varying image heights */
+}
+
+.hotel-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: auto; /* Allow the image to scale proportionally */
+}
+
+.hotel-details {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-details h2 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+.hotel-details p {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0;
+    font-family:'Philosopher', sans-serif;
+}
+
+.rating {
+    font-size: 24px;
+    color: #f1870f;
+}
+
+.btn-link {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition:ease-in 0.2s;
+    font-family:'Philosopher', sans-serif;
+    
+}
+
+.btn-link:hover {
+    transform: scale(1.08);
+    background-color: #007bff;
+    color: white;
+}
+.table-container {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+    padding: 20px; /* Add padding to create margins in responsive view */
+    
+   
+}
+
+.responsive-table {
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    font-family:'Philosopher', sans-serif;
+    font-size: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content h2{
+    width: 100%;
+    font-family:'Courgette', cursive ;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.content p
+{
+    font-family:'Philosopher', sans-serif;
+    font-size: 20px;
+}
+
+.content img {
+    width: calc(33.33% - 10px);
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+footer {
+    background-color:rgba(0, 0, 0, 0.439);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 100px;
+    border: 1px solid white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formalities {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+
+.formalities p {
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formalities a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px; /* Increase the font size for social media icons */
+    
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
+  }
+  .fa-instagram {
+    background-image: linear-gradient(45deg, #F58529, #DD2A7B);
+    color: white;
+    
+  }
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family:'Philosopher', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    
+    .details-container p
+    {
+        font-size: 18px;
+    }
+    .text-content
+    {
+        font-size: 18px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for smaller screens */
+    }
+    .hotel-card {
+        flex-direction: column; /* Change flex direction to stack elements vertically */
+        align-items: center; /* Center-align elements */
+    }
+
+    .hotel-image {
+        order: 0; /* Move image below the details */
+    }
+    .content h2
+    {
+        font-size: 20px;
+    }
+    .content p
+    {
+        font-size: 18px;
+    }
+    .content img {
+        width: calc(33.33% - 10px);
+        height: 70px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formalities,
+    .social-icons,
+    .footer-links {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    } 
+
+    
+}

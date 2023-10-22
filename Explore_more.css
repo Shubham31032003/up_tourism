@@ -1,0 +1,541 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/5491176.jpg'); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover; /* Cover the entire page with the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Add any other global styles you want */
+    overflow-x: hidden;
+    
+}
+
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 1px 1px 4px white;
+    
+}
+.navbar-nav .nav-link {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    font-family:'Philosopher', sans-serif;
+    font-size: large;
+}
+.custom-navbar {
+    /* Set the background color to transparent */
+    border: none; /* Remove the border */
+    padding:5px; /* Remove padding */
+    margin: 0;
+  }
+
+  .header-section {
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Create a relative positioning context */
+  }
+
+
+
+
+
+/* Link hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* You can adjust the height as needed */
+    background-color: transparent; /* Set the desired underline color */
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.navbar-nav .nav-link:hover::before {
+    background-color: white; /* Set the desired hover underline color */
+}
+.btn 
+{
+    font-family:'Philosopher', sans-serif ;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(178, 178, 178, 0.909);
+    min-width: 200px;
+    z-index: 1;
+    column-count: 6; /* Adjust the number of columns as needed */
+    border-radius: 10px;
+    margin-top: 5px;
+    
+    
+    
+}
+
+/* Style for the district links */
+.dropdown-content a {
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    text-align: center;
+    
+    font-family:'Philosopher', sans-serif ;
+    
+   
+}
+
+
+
+/* On hover, display the dropdown content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: rgba(213, 212, 212, 0.863); /* Change to your desired background color */
+    border-radius: 5px;
+    transform: scale(1.08) ;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 10px black ;
+}
+
+
+
+
+/* Add styles to target the image-slider */
+/* Add styles for fade effect */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+    
+}
+/* Set the height of each carousel item to match the first item */
+.carousel-inner .carousel-item {
+    height: auto; /* Reset the height to auto */
+    margin-bottom: 10px;
+    
+}
+
+/* Set the height of each image to match the height of the first image */
+.carousel-inner .carousel-item img {
+    height: 100%;
+    border-radius: 10px;
+}
+.carousel-caption {
+    font-family: 'Philosopher', sans-serif;
+}
+.col {
+    flex: 1;
+}
+
+.top-heading
+{
+    font-family:'Courgette', cursive ;
+    text-align: center;
+    margin-top: 20px;
+    
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: white;
+}
+.top-subheading
+{
+    font-family:'Courgette', cursive ;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: white;
+    
+    
+}
+.plan_your_trip
+{
+    font-family:'Courgette', cursive ;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: white;
+}
+.text-heading
+{
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 4px white ;
+}
+.text-content
+{
+    font-family:'Philosopher', sans-serif;
+    
+}
+.text-container {
+    padding: 20px;
+    
+    color:white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    
+    
+}
+.text-container .text-content
+{
+    font-size: 20px;
+}
+.leaders-heading
+{
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: white;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; /* Takes remaining width */
+    
+   
+}
+.photo-card {
+    flex: 0 0 calc(25% - 10px); /* Three cards per row with 10px spacing */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 5px;
+    
+    
+    
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-text {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-text h2 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    font-family:'Philosopher', sans-serif
+}
+
+.card-text p {
+    font-size: 14px;
+    color: #777;
+    font-family:'Philosopher', sans-serif
+}
+.tourist_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between containers */
+    margin-top: 30px;
+
+}
+
+.tourism-place {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    background-color:transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.place-image img {
+    width: 100%;
+    height: auto;
+}
+
+.place-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.place-details h2 {
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    font-family:'Philosopher', sans-serif
+}
+
+.place-details p {
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.explore-button {
+    background-color:orange; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family:'Philosopher', sans-serif;
+    transition: ease-in 0.5ms;
+}
+
+.explore-button:hover {
+    transform: scale(1.08);
+}   
+footer {
+    background-color:rgba(0, 0, 0, 0.439);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 100px;
+    border: 1px solid white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formalities {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+
+.formalities p {
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formalities a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px; /* Increase the font size for social media icons */
+    
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
+  }
+  .fa-instagram {
+    background-image: linear-gradient(45deg, #F58529, #DD2A7B);
+    color: white;
+    
+  }
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family:'Philosopher', sans-serif;
+}
+  
+@media(max-width:768px) {
+    .navbar-nav .nav-link:hover {
+        text-shadow: 4px 4px 4px rgb(155, 155, 153);
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        text-shadow: none;
+        padding: 3px;
+        
+    }
+    .navbar-nav .nav-link::before {
+        content: none;
+    }
+    .sliding-images {
+        flex: 100%; /* Full width on small screens */
+        order: 2; /* Change the order for stacking */
+        margin-top: 10px; /* Add spacing between columns */
+    }
+    .card-container {
+        display: flex; /* Use flexbox to create a row layout */
+        flex-wrap: wrap; /* Allow cards to wrap onto the next line when there isn't enough space */
+        justify-content: center; /* Center-align cards horizontally */
+        margin: 10px;
+    }
+    
+    .photo-card {
+        flex: 0 0 calc(50% - 20px); /* Each card takes 50% of the container width with some margin */
+        margin: 10px; /* Add margin to create space between cards */
+    }
+        
+   
+    
+    .top-heading {
+        font-size: 23px; /* Adjust the font size for smaller screens */
+        margin-top: 20px;
+        margin-bottom: 0px;
+        
+    }
+    .top-subheading
+{
+    font-family:'Courgette', cursive ;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: white;
+    font-size: 10px;
+}
+.leaders-heading
+{
+    margin-top: 100px;
+
+}
+
+    
+    .text-container .text-content
+    {
+        font-size: 15px;
+    }
+    .dropdown-content {
+        column-count: 4; /* Reduce the number of columns for smaller screens */
+        min-width: 160px; /* Adjust the minimum width */
+        left: 0; /* Align the dropdown to the left edge */
+    }
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: underline;
+        
+    }
+    .custom-photo-card {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .card
+    {
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+
+    }
+    .content-container {
+        flex-direction: column; /* Stack containers vertically */
+    }
+    
+    .paragraph-container {
+        flex: 0 0 100%; /* Full width in responsive view */
+        margin-right: 0; /* No margin in responsive view */
+        margin-bottom: 10px; /* Spacing between containers in responsive view */
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formalities,
+    .social-icons,
+    .footer-links {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    } 
+    
+}

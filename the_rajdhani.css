@@ -1,0 +1,70 @@
+body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/718/343/760/light-faded-background-wallpaper-preview.jpg'); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover; /* Cover the entire page with the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Add any other global styles you want */
+   
+    
+}
+/* Target all navigation links with the class "nav-link" and set the color to black */
+
+.navbar .navbar-nav .nav-link {
+    color: black !important;
+    
+}
+
+/* Target the active link separately, if needed */
+.navbar .navbar-nav .nav-link.active {
+    color: black !important;
+}
+.navbar-toggler{
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content h2{
+    width: 100%;
+    font-family:'Courgette', cursive ;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.content p
+{
+    font-family:'Philosopher', sans-serif;
+    font-size: 20px;
+}
+
+.content img {
+    width: calc(33.33% - 10px);
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (max-width:768px) {
+    .content img {
+        width: calc(33.33% - 10px);
+        height: 70px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    
+}

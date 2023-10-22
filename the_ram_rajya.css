@@ -1,0 +1,110 @@
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTY92P_vWQRk4R0ZepL4j-9F_nkG_j9hjvhYCbpAKczOBV8KQ64dyfJg2aaaocvGCYP18&usqp=CAU'); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover; /* Cover the entire page with the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Add any other global styles you want */
+   
+    
+}
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* You can adjust the height as needed */
+    background-color: transparent; /* Set the desired underline color */
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.navbar-nav .nav-link:hover::before {
+    background-color: white; /* Set the desired hover underline color */
+}
+.navbar-brand{
+    color: white;
+}
+.navbar .navbar-nav .nav-link {
+    color:white !important;
+}
+
+/* Target the active link separately, if needed */
+.navbar .navbar-nav .nav-link.active {
+    color: white !important;
+}
+.navbar-toggler{
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px rgb(224, 220, 220);
+}
+.details-container
+{
+    color: rgb(211, 205, 205);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content h2{
+    width: 100%;
+    font-family:'Courgette', cursive ;
+    text-shadow: 0px 0px 10px rgb(158, 156, 156);
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.container-fluid .content ol li
+{
+    font-family:'Philosopher', sans-serif;
+    font-size: 18px;
+}
+.container-fluid .content strong
+{
+    font-size: 18px;
+}
+
+.content img {
+    width: calc(33.3% - 10px);
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+.responsive-table th,
+.responsive-table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    font-family:'Philosopher', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.rating {
+    font-size: 24px;
+    color: #f1e90f;
+}
+@media (max-width:768px) {
+    .content img {
+        width: calc(33.33% - 10px);
+        height: 70px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    
+}
